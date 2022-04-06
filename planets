@@ -1,0 +1,494 @@
+COMMUN+9301738K@5CD1343GFF MINGW64 ~
+$ ~/test/shell
+bash: /c/Users/9301738K/test/shell: No such file or directory
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~
+$ ~/downloads/test/shell
+bash: /c/Users/9301738K/downloads/test/shell: Is a directory
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~
+$ cd~/shell
+bash: cd~/shell: No such file or directory
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~
+$ cd /downloads/quests/test
+bash: cd: /downloads/quests/test: No such file or directory
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~
+$ cd downloads/test/shell
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell
+$ -L -o planets.zip "https://github.com/WildCodeSchool/quests-resources/blob/master/terminal/planets.zip?raw=true"
+bash: -L: command not found
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell
+$ curl
+
+
+curl: try 'curl --help' or 'curl --manual' for more information
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell
+$
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell
+$
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell
+$ curl ^[[200~-L -o planets.zip "https://github.com/WildCodeSchool/quests-resources/blob/master/terminal/planets.zip?raw=true"~
+curl: (3) bad range in URL position 3:
+-L
+  ^
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell
+$ curl -L -o planets.zip "https://github.com/WildCodeSchool/quests-resources/blob/master/terminal/planets.zip?raw=true"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   148  100   148    0     0     94      0  0:00:01  0:00:01 --:--:--    94
+100   159  100   159    0     0     71      0  0:00:02  0:00:02 --:--:--    71
+100  293k  100  293k    0     0  85605      0  0:00:03  0:00:03 --:--:--  254k
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell
+$ unzip planet.zip
+unzip:  cannot find or open planet.zip, planet.zip.zip or planet.zip.ZIP.
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell
+$ cd /planets
+bash: cd: /planets: No such file or directory
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell
+$ cd shell
+bash: cd: shell: No such file or directory
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell
+$ unzip planets.zip
+Archive:  planets.zip
+   creating: planets/
+  inflating: planets/mercury.jpeg
+  inflating: planets/earth.jpeg
+  inflating: planets/pluto.jpeg
+  inflating: planets/arrakis.jpeg
+  inflating: planets/jupiter.jpeg
+  inflating: planets/venus.jpeg
+  inflating: planets/mars.jpeg
+  inflating: planets/cybertron.jpeg
+  inflating: planets/coruscant.jpeg
+  inflating: planets/uranus.jpeg
+  inflating: planets/neptune.jpeg
+  inflating: planets/saturn.jpeg
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell
+$ mkdir real fictional inhabited
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell
+$ ls
+fictional/  inhabited/  planets/  planets.zip  real/
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell
+$ cd real
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/real
+$ mkdir terrestrial gas-giants dwarfs-planets
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/real
+$ mv arrakis cybertron coruscant
+mv: target 'coruscant' is not a directory
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/real
+$ cd ..
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell
+$ arrakis cybertron coruscant fictional/
+bash: arrakis: command not found
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell
+$ mv arrakis cybertron coruscant fictional/
+mv: cannot stat 'arrakis': No such file or directory
+mv: cannot stat 'cybertron': No such file or directory
+mv: cannot stat 'coruscant': No such file or directory
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell
+$ ls
+fictional/  inhabited/  planets/  planets.zip  real/
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell
+$ cd planets
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets
+$ mkdir fictional inhabited planets
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets
+$ cd ..
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell
+$ rm fictional
+rm: cannot remove 'fictional': Is a directory
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell
+$ rm fictional/
+rm: cannot remove 'fictional/': Is a directory
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell
+$ cd planets/
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets
+$ mv arrakis cybertron coruscant fictional/
+mv: cannot stat 'arrakis': No such file or directory
+mv: cannot stat 'cybertron': No such file or directory
+mv: cannot stat 'coruscant': No such file or directory
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets
+$ arrakis.jpeg
+bash: arrakis.jpeg: command not found
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets
+$ mv arrakis.jpeg fictional/
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets
+$ corruscant.jpeg cybertron.jpeg fictional/
+bash: corruscant.jpeg: command not found
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets
+$ mv corruscant.jpeg cybertron.jpeg fictional/
+mv: cannot stat 'corruscant.jpeg': No such file or directory
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets
+$ mv coruscant.jpeg fictional/
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets
+$ ls
+earth.jpeg  inhabited/    mars.jpeg     neptune.jpeg  pluto.jpeg   uranus.jpeg
+fictional/  jupiter.jpeg  mercury.jpeg  planets/      saturn.jpeg  venus.jpeg
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets
+$ mv earth.jpeg mars.jpeg neptune.jpeg pluto.jpeg uranus.jpeg jupiter.jpeg mercury.jpeg saturn.jpeg venus.jpeg real/
+mv: target 'real/' is not a directory
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets
+$ mkdir real
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets
+$ ^[[200~ mv earth.jpeg mars.jpeg neptune.jpeg pluto.jpeg uranus.jpeg jupiter.jpeg mercury.jpeg saturn.jpeg venus.jpeg real/~
+bash: $'\E[200~': command not found
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets
+$
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets
+$ mv ^M
+mv: missing file operand
+Try 'mv --help' for more information.
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets
+$ mv earth.jpeg mars.jpeg neptune.jpeg pluto.jpeg uranus.jpeg jupiter.jpeg mercury.jpeg saturn.jpeg venus.jpeg real/
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets
+$ cp /real/earth.jpeg inhabited
+cp: cannot stat '/real/earth.jpeg': No such file or directory
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets
+$ cp ~/real/earth.jpeg inhabited/
+cp: cannot stat '/c/Users/9301738K/real/earth.jpeg': No such file or directory
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets
+$ ~download/test/shell/planets/inhabited
+bash: ~download/test/shell/planets/inhabited: No such file or directory
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets
+$ cp ~download/test/shell/planets/inhabited
+cp: missing destination file operand after '~download/test/shell/planets/inhabited'
+Try 'cp --help' for more information.
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets
+$ cp ~download/test/shell/planets/real/earth.jpeg inhabited/
+cp: cannot stat '~download/test/shell/planets/real/earth.jpeg': No such file or directory
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets
+$ cp
+cp: missing file operand
+Try 'cp --help' for more information.
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets
+$ cp ~downloads/test/shell/planets/real/earth.jpeg inhabited/
+cp: cannot stat '~downloads/test/shell/planets/real/earth.jpeg': No such file or directory
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets
+$ cd real
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets/real
+$ cp earth.jpeg planets/inhabited
+cp: cannot create regular file 'planets/inhabited': No such file or directory
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets/real
+$ earth.
+bash: earth.: command not found
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets/real
+$ cp earth.jpeg planets/inahbited/
+cp: cannot create regular file 'planets/inahbited/': No such file or directory
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets/real
+$ cp earth.jpeg ~/downloads/test/shell/planets/inhabited/
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets/real
+$ cd ..
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets
+$ ls
+fictional/  inhabited/  planets/  real/
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets
+$ cd fictional
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets/fictional
+$ cp * ~/downloads/test/shell/planets/inhabited/
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets/fictional
+$ cd inhabited
+bash: cd: inhabited: No such file or directory
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets/fictional
+$ cd ..
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets
+$ cd inhabited
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets/inhabited
+$ ls
+arrakis.jpeg  coruscant.jpeg  cybertron.jpeg  earth.jpeg
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets/inhabited
+$ cd ..
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets
+$ cd real
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets/real
+$ rm pluto
+rm: cannot remove 'pluto': No such file or directory
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets/real
+$ rm pluto.jpeg
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets/real
+$ ls
+earth.jpeg    mars.jpeg     neptune.jpeg  uranus.jpeg
+jupiter.jpeg  mercury.jpeg  saturn.jpeg   venus.jpeg
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets/real
+$ find
+.
+./earth.jpeg
+./jupiter.jpeg
+./mars.jpeg
+./mercury.jpeg
+./neptune.jpeg
+./saturn.jpeg
+./uranus.jpeg
+./venus.jpeg
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets/real
+$ cd ..
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets
+$ find
+.
+./fictional
+./fictional/arrakis.jpeg
+./fictional/coruscant.jpeg
+./fictional/cybertron.jpeg
+./inhabited
+./inhabited/arrakis.jpeg
+./inhabited/coruscant.jpeg
+./inhabited/cybertron.jpeg
+./inhabited/earth.jpeg
+./planets
+./real
+./real/earth.jpeg
+./real/jupiter.jpeg
+./real/mars.jpeg
+./real/mercury.jpeg
+./real/neptune.jpeg
+./real/saturn.jpeg
+./real/uranus.jpeg
+./real/venus.jpeg
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets
+$ history
+    1  pwd
+    2  cd..
+    3  pwd
+    4  cd..
+    5  cd ..
+    6  cd ..
+    7  ls
+    8  cd users
+    9  cd/c/users/9301738K
+   10  cd 9301738K
+   11  ls
+   12  ls .
+   13  ls a
+   14  ls -a
+   15  ls images
+   16  ls /pictures
+   17  ls bin
+   18  ls /bin
+   19  ls -l /bin
+   20  pwd
+   21  cd
+   22  cd ~/music
+   23  ls
+   24  ls ~/downloads
+   25  cd ../home/9301738K
+   26  cd ../c/user/9301738K
+   27  cd/c/users/9301738K
+   28  cd ../users/9301738K
+   29  pwd
+   30  cd ..
+   31  pwd
+   32  cd Images
+   33  cd download
+   34  cd downloads
+   35  cd ..
+   36  pwd
+   37  cd /downloads
+   38  cd /c/users/9301738k/download
+   39  cd /c/users/9301738K/downloads
+   40  cd ..
+   41  pwd
+   42  ls
+   43  pictures
+   44  /picture
+   45  cg /pictures
+   46  cd /pictures
+   47  cd/download
+   48  cd downloads
+   49  mkdir test
+   50  -p test/test1/test2
+   51  mkdir -p test/test1/test2
+   52  ls
+   53  cd test
+   54  ls
+   55  rmdir test1 test2
+   56  rmdir test2
+   57  cd test1
+   58  rmdir test2
+   59  cd ..
+   60  rmdir test1
+   61  touch apple
+   62  ls
+   63  ls-a
+   64  ls -a
+   65  ls -1
+   66  touch apricot carrot parsnip cauliflower courgette
+   67  ls -l
+   68  cp apple banana
+   69  cp apple fruits
+   70  cp apple fruits/orange
+   71  mkdir fruits
+   72  rmdir fruits
+   73  mkdir fruits
+   74  mkdir fruits
+   75  cd ..
+   76  apple fruits/orange
+   77  cp apple fruits
+   78  cp apple
+   79  find
+   80  cp apple banana
+   81  cp apple banana
+   82  ls
+   83  cd test
+   84  apple banana
+   85  cp apple banana
+   86  cp apple fruits/orange
+   87  ls ; ls fruits
+   88  cp ap* banana fruits
+   89  cp -R fruits copy-of-fruits
+   90  cp -R fruits copy-of-fruits /tmp/
+   91  cp fruits text2
+   92  find
+   93  rm ap* banana
+   94  rm -r copy-of-fruits
+   95  mv ca* parsnip courgette vegetables/
+   96  mkdir vegetables
+   97  mv ca* pasnip courgette vegetables/
+   98  mc parsnip vegetables/
+   99  mv parsnip vegetables/
+  100  mv fruits/orange fruits/grapefruit
+  101  ~quests/shell
+  102  ~quests/shell
+  103  pwd
+  104  mkdir shell
+  105  cd shell
+  106  curl -L -o planets.zip "https://github.com/WildCodeSchool/quests-resources/blob/master/terminal/planets.zip?raw=tr
+  107  ~/test/shell
+  108  ~/downloads/test/shell
+  109  cd~/shell
+  110  cd /downloads/quests/test
+  111  cd downloads/test/shell
+  112  -L -o planets.zip "https://github.com/WildCodeSchool/quests-resources/blob/master/terminal/planets.zip?raw=true"
+  113  curl
+  114  curl -L -o planets.zip "https://github.com/WildCodeSchool/quests-resources/blob/master/terminal/planets.zip?raw=true"~
+  115  curl -L -o planets.zip "https://github.com/WildCodeSchool/quests-resources/blob/master/terminal/planets.zip?raw=true"
+  116  unzip planet.zip
+  117  cd /planets
+  118  cd shell
+  119  unzip planets.zip
+  120  mkdir real fictional inhabited
+  121  ls
+  122  cd real
+  123  mkdir terrestrial gas-giants dwarfs-planets
+  124  mv arrakis cybertron coruscant
+  125  cd ..
+  126  arrakis cybertron coruscant fictional/
+  127  mv arrakis cybertron coruscant fictional/
+  128  ls
+  129  cd planets
+  130  mkdir fictional inhabited planets
+  131  cd ..
+  132  rm fictional
+  133  rm fictional/
+  134  cd planets/
+  135  mv arrakis cybertron coruscant fictional/
+  136  arrakis.jpeg
+  137  mv arrakis.jpeg fictional/
+  138  corruscant.jpeg cybertron.jpeg fictional/
+  139  mv corruscant.jpeg cybertron.jpeg fictional/
+  140  mv coruscant.jpeg fictional/
+  141  ls
+  142  mv earth.jpeg mars.jpeg neptune.jpeg pluto.jpeg uranus.jpeg jupiter.jpeg mercury.jpeg saturn.jpeg venus.jpeg real/
+  143  mkdir real
+  144   mv earth.jpeg mars.jpeg neptune.jpeg pluto.jpeg uranus.jpeg jupiter.jpeg mercury.jpeg saturn.jpeg venus.jpeg real/~
+  145  mv
+  146  mv earth.jpeg mars.jpeg neptune.jpeg pluto.jpeg uranus.jpeg jupiter.jpeg mercury.jpeg saturn.jpeg venus.jpeg real/
+  147  cp /real/earth.jpeg inhabited
+  148  cp ~/real/earth.jpeg inhabited/
+  149  ~download/test/shell/planets/inhabited
+  150  cp ~download/test/shell/planets/inhabited
+  151  cp ~download/test/shell/planets/real/earth.jpeg inhabited/
+  152  cp
+  153  cp ~downloads/test/shell/planets/real/earth.jpeg inhabited/
+  154  cd real
+  155  cp earth.jpeg planets/inhabited
+  156  earth.
+  157  cp earth.jpeg planets/inahbited/
+  158  cp earth.jpeg ~/downloads/test/shell/planets/inhabited/
+  159  cd ..
+  160  ls
+  161  cd fictional
+  162  cp * ~/downloads/test/shell/planets/inhabited/
+  163  cd inhabited
+  164  cd ..
+  165  cd inhabited
+  166  ls
+  167  cd ..
+  168  cd real
+  169  rm pluto
+  170  rm pluto.jpeg
+  171  ls
+  172  find
+  173  cd ..
+  174  find
+  175  history
+
+COMMUN+9301738K@5CD1343GFF MINGW64 ~/downloads/test/shell/planets
+$
